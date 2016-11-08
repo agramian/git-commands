@@ -200,6 +200,7 @@ git rebase -i master
 # ‘<,’>s/pick/squash
 git checkout master
 git merge temporary-branch
+```
 
 ### remove all files/dirs matching anything in .gitignore
 Use `git clean -xdn` to perform a dry run and see what will be removed.
