@@ -3,7 +3,7 @@ Useful Git commands reference
 
 *TODO: formatting, organize, index/TOC*
 
-##### basic
+### basic
 `git add [files]`
 
 `git commit -m [message]`
@@ -44,10 +44,10 @@ If you want to remove ignored as well as non-ignored files, run `git clean -f -x
 
 `git rebase -i HEAD~2`
 
-##### make chagnes
+### make chagnes
 `git push origin HEAD --force`
 
-##### undo rebase
+### undo rebase
 `git reflog`
 
 `git reset --hard HEAD@{5}`
@@ -170,7 +170,7 @@ git config --global mergetool.kdiff3.path /Applications/kdiff3.app/Contents/MacO
 git mergetool -t kdiff3
 ```
 
-##### remove .orig files
+### remove .orig files
 `git clean -f`
 
 `git reset --hard origin/master`
