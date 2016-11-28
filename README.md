@@ -213,3 +213,6 @@ git checkout --orphan <branchname>`
 git commit --allow-empty -m "initial commit"
 git push -u origin <branchname>
 ```
+
+### permanently authenticate git repositories
+`git config credential.helper store`
