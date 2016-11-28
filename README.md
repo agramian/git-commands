@@ -205,5 +205,11 @@ git merge temporary-branch
 ### remove all files/dirs matching anything in .gitignore
 Use `git clean -xdn` to perform a dry run and see what will be removed.
 
-Then use `git clean -xdf to execute it.
+Then use `git clean -xdf` to execute it.
 
+### new project initial commits
+```
+git checkout --orphan <branchname>`
+git commit --allow-empty -m "initial commit"
+git push -u origin <branchname>
+```
