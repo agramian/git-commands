@@ -136,6 +136,8 @@ git rebase -i master
 git checkout master
 git merge new-feature-candidate
 ```
+### rebase preserve merge commits
+`git rebase --preserve-merges`
 
 ### patching
 ```
