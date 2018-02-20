@@ -20,6 +20,14 @@ Useful Git commands reference
 
 `git reset --hard origin/mybranch`
 
+### fetch/pull all remote branches
+`git fetch origin; git branch -a; git pull --all;`
+
+OR
+
+`git fetch origin --depth=10000 $(git ls-remote -h -t origin); git pull --all;`
+
+
 ### removed untracked files from current branch
 `git clean -f`
 
