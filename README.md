@@ -226,3 +226,7 @@ git push -u origin <branchname>
 
 ### permanently authenticate git repositories
 `git config credential.helper store`
+
+### Undo latest commit
+git reset HEAD~
+
