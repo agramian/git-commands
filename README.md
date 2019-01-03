@@ -228,5 +228,5 @@ git push -u origin <branchname>
 `git config credential.helper store`
 
 ### Undo latest commit
-git reset HEAD~
+`git reset HEAD~`
 
