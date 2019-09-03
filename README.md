@@ -27,6 +27,8 @@ OR
 
 `git fetch origin --depth=10000 $(git ls-remote -h -t origin); git pull --all;`
 
+### fetch branch without checking out
+`git fetch origin <source branch name>:<destination branch name>`
 
 ### removed untracked files from current branch
 `git clean -f`
