@@ -232,3 +232,6 @@ git push -u origin <branchname>
 ### Undo latest commit
 `git reset HEAD~`
 
+### Remove file/directory from VCS without deleting
+`git rm --cached [-r] path/to/file/or/directory`
+
