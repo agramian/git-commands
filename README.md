@@ -214,10 +214,17 @@ git checkout master
 git merge temporary-branch
 ```
 
-### remove all files/dirs matching anything in .gitignore
+### remove all UNTRACKED files/dirs matching anything in .gitignore
 Use `git clean -xdn` to perform a dry run and see what will be removed.
 
 Then use `git clean -xdf` to execute it.
+
+### remove all TRACKED files/dirs matching anything in .gitignore
+Remove all files then re-add them to vcs:
+```
+git rm -r --cached .
+git add .
+```
 
 ### new project initial commits
 ```
