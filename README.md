@@ -242,3 +242,26 @@ git push -u origin <branchname>
 ### Remove file/directory from VCS without deleting
 `git rm --cached [-r] path/to/file/or/directory`
 
+### Use existing repo as the base for a new repo while maintaining history
+
+```
+# Create a mirrored clone.
+git clone --mirror {{old-repo-url}} {{new-repo-name}}
+
+# Remove origin (ignore warnings if shown about not all branches removed)
+cd {{new-repo-name}}
+git remote remove origin
+
+# Add the new origin.
+git remote add origin {{new-repo-url}}
+
+# Push everything.
+git push --all
+git push --tags
+
+# Replaced the mirrored clone with the actual repo so commits can be made.
+cd ..
+rm -rf {{new-repo-name}}
+git clone new-repo-url {{new-repo-url}}
+```
+
