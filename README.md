@@ -263,6 +263,6 @@ git push --tags
 # Replaced the mirrored clone with the actual repo so commits can be made.
 cd ..
 rm -rf {{new-repo-name}}
-git clone new-repo-url {{new-repo-url}}
+git clone {{new-repo-url}}
 ```
 
