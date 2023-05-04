@@ -255,8 +255,9 @@ git remote remove origin
 # Add the new origin.
 git remote add origin {{new-repo-url}}
 
-# Push everything.
-git push --all
+# Push everything (or alternatively just specific branches).
+git push origin main # only main branch
+git push --all # all branches
 git push --tags
 
 # Replaced the mirrored clone with the actual repo so commits can be made.
