@@ -72,6 +72,13 @@ git checkout master
 git merge upstream/master
 ```
 
+### rebase onto upstream repository branch
+```
+git fetch upstream {{branch}}
+git checkout {{branch}}
+git rebase -i upstream/{{branch}}
+```
+
 ### delete local branch
 ```
 git branch -d the_local_branch
