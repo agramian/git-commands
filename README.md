@@ -102,6 +102,13 @@ git push origin :the_remote_branch
 ### get submodule revisions
 `git submodule status`
 
+### update and commit submodule
+```
+git submodule update --remote --init
+git add {{submodule directory}}
+git commit -m "Update submodule"
+```
+
 ### rebase from root
 `git rebase -i --root`
 
