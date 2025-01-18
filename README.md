@@ -280,3 +280,11 @@ rm -rf {{new-repo-name}}
 git clone {{new-repo-url}}
 ```
 
+### Print commit info
+
+See the list of formats [here under the placeholders section](https://git-scm.com/docs/git-show#_pretty_formats).
+
+```
+git show -s --format='<format> [<optional commit hash>]'
+```
+
